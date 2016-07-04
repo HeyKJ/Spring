@@ -13,6 +13,12 @@ public class FixedDepositDaoImpl implements FixedDepositDao {
 	
 	private Map<Long, FixedDepositDetails> fixedDeposits = new HashMap<Long, FixedDepositDetails>();
 	
+	private DatabaseInfo databaseInfo;
+	
+	public void setDatabaseInfo(DatabaseInfo databaseInfo) {
+		this.databaseInfo = databaseInfo;
+	}
+	
 	public void setUrl(String url) {
 		this.url = url;
 	}
